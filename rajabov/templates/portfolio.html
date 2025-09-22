@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="uz">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rajabov Portfolio</title>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href=" {% static 'css/style.css' %}">
+</head>
+<body>
+
+
+   <audio autoplay loop hidden>
+        <source src="{% static 'img/mp3.m4a' %}" type="audio/mpeg">
+        Sizning brauzeringiz musiqani qo‘llab-quvvatlamaydi.
+    </audio>
+
+<header>
+  <nav>
+    <a href="#about">About Me</a>
+    <a href="#projects">Projects</a>
+    <a href="#goals">My Goals</a>
+  </nav>
+</header>
+
+<!-- ABOUT -->
+<section id="about" class="about">
+  <div class="container">
+    <div class="about-text" id="aboutText">
+      <h2>About Me</h2>
+      <p>Salom! Men <b>Xudoyberdi Rajabov</b>, dasturlashga katta qiziqish bildirayotgan yosh dasturchiman.</p>
+      <p>Hozirda <b>Sharof Rashidov nomidagi Samarqand davlat universitetida</b> 1-kurs talabasiman.</p>
+      <p>Asosiy qiziqishim — <b>Python</b> va <b>Backend dasturlash</b>. Kelajakda kuchli dasturchi va mustaqil <b>freelancer</b> bo‘lishni maqsad qilganman.</p>
+      <p>Doimiy ravishda yangi texnologiyalarni o‘rganaman, loyihalar ishlab chiqaman va o‘zimni har kuni rivojlantirishga intilaman.</p>
+    </div>
+    <div class="about-image" id="aboutImage">
+      <img src="{% static 'img/hero1.png' %}" alt="My Photo">
+    </div>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects" class="projects">
+  <h2>My Projects</h2>
+  <div class="project-container" id="projectContainer">
+    <div class="project" onclick="window.open('https://example.com')">
+      <img src="{% static 'img/portfolio1.jpg' %}" alt="Project 1">
+      <h3>Portfolio Website</h3>
+      <p>Shaxsiy portfolio, responsive dizayn va smooth scroll bilan.</p>
+    </div>
+    <div class="project" onclick="window.open('https://example.com')">
+      <img src="{% static 'img/portfolio2.jpg' %}" alt="Project 2">
+      <h3>E-commerce Frontend</h3>
+      <p>Onlayn do‘kon interfeysi, mahsulotlar galereyasi va interaktiv elementlar bilan.</p>
+    </div>
+    <div class="project" onclick="window.open('https://example.com')">
+      <img src="{% static 'img/portfolio3.jpg' %}" alt="Project 3">
+      <h3>Blog Platform</h3>
+      <p>Oddiy blog, foydalanuvchi yozuvlari va adaptive dizayn bilan.</p>
+    </div>
+
+    
+
+    <div class="project" onclick="window.open('https://example.com')">
+      <img src="{% static 'img/portfolio4.jpg' %}" alt="Project 3">
+      <h3>Blog Platform</h3>
+      <p>Oddiy blog, foydalanuvchi yozuvlari va adaptive dizayn bilan.</p>
+    </div>
+    <div class="project" onclick="window.open('https://example.com')">
+      <img src="{% static 'img/portfolio5.jpg' %}" alt="Project 3">
+      <h3>Blog Platform</h3>
+      <p>Oddiy blog, foydalanuvchi yozuvlari va adaptive dizayn bilan.</p>
+    </div>
+  </div>
+</section>
+
+<!-- GOALS -->
+<section id="goals" class="goals">
+  <div class="goals-bg" id="goalsBg"></div>
+  <div class="goals-content" id="goalsContent">
+    <h2>My Goals</h2>
+    <p>Frontend va Backend dasturlashda yuqori darajaga chiqish.</p>
+    <p>Professional <b>freelancer</b> sifatida ishlash va sifatli loyihalar yaratish.</p>
+    <p>Open-source loyihalarda qatnashish va hamjamiyatga hissa qo‘shish.</p>
+    <p>Katta kompaniyalarda amaliyot o‘tash va tajriba orttirish.</p>
+  </div>
+</section>
+
+<script src="{% static 'js/tarjimon.js' %}">
+/* ---- Intersection observer for fade-in ---- */
+
+</script>
+</body>
+</html>
